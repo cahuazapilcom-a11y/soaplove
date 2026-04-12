@@ -30,6 +30,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -224,12 +225,12 @@ img { max-width: 100%; }
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 100px 24px 60px;
-  max-width: 100%;
-  margin: 0 auto;
-  gap: 60px;
+  width: 100%;
   position: relative;
   overflow: hidden;
+  gap: 60px;
 }
 .hero-bg-video {
   position: absolute;
@@ -252,11 +253,10 @@ img { max-width: 100%; }
   z-index: 2;
 }
 .hero-content {
-  max-width: 600px;
-  padding-left: 40px;
+  flex: 1;
+  max-width: 560px;
+  padding-left: 0;
 }
-
-.hero-content { flex: 1; }
 
 .hero-badge {
   display: inline-block;
