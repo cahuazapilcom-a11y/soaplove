@@ -582,6 +582,10 @@ img { max-width: 100%; }
   padding: 100px 24px;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
 }
 .quiz-bg-video {
   position: absolute;
