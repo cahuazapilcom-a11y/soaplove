@@ -1010,3 +1010,19 @@ img { max-width: 100%; }
   border-radius: var(--radius) var(--radius) 0 0;
   object-fit: cover;
 }
+
+/* ===== TARJETA CACAO - imagen grande ===== */
+.cacao-card {
+  padding-top: 0;
+  overflow: hidden;
+}
+.cacao-img-wrap {
+  margin: 0 -24px 16px -24px;
+  font-size: 0;
+}
+.cacao-img {
+  width: 100%;
+  height: 260px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  object-fit: cover;
+}
