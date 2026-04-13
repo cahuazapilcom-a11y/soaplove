@@ -959,3 +959,22 @@ img { max-width: 100%; }
   .hero-stats { gap: 24px; }
   .sobre-img-placeholder { height: 280px; }
 }
+
+/* ===== TARJETA COCO - imagen grande y texto transparente ===== */
+.coco-card {
+  padding-top: 0;
+  overflow: hidden;
+}
+.coco-img-wrap {
+  margin: 0 -24px 16px -24px;
+  font-size: 0;
+}
+.coco-img {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  object-fit: cover;
+}
+.coco-text {
+  opacity: 0.45;
+}
