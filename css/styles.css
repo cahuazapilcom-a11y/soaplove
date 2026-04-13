@@ -330,6 +330,13 @@ img { max-width: 100%; }
 .soap-hero-video { width: 100%; border-radius: 16px; object-fit: cover; margin-bottom: 16px; max-height: 280px; }
 .sobre-mi-img { width: 100%; height: 100%; border-radius: 20px; object-fit: cover; display: block; }
 .producto-img { width: 80px; height: 80px; border-radius: 12px; object-fit: cover; }
+.miel-img, .coco-img, .avena-img, .cacao-img, .caja-img, .carbon-img, .caspa-img, .curcuma-img, .infantil-img, .intimo-img, .pack-img, .shampo-img, .teverde-img {
+  width: 100% !important;
+  height: 260px !important;
+  border-radius: var(--radius) var(--radius) 0 0 !important;
+  object-fit: cover !important;
+  display: block !important;
+}
 
 /* ===== INGREDIENTES ===== */
 .ingredients {
@@ -970,10 +977,11 @@ img { max-width: 100%; }
   font-size: 0;
 }
 .coco-img {
-  width: 100%;
-  height: 260px;
+  width: 100% !important;
+  height: 260px !important;
   border-radius: var(--radius) var(--radius) 0 0;
   object-fit: cover;
+  display: block;
 }
 .coco-text {
   opacity: 1;
@@ -989,10 +997,11 @@ img { max-width: 100%; }
   font-size: 0;
 }
 .miel-img {
-  width: 100%;
-  height: 260px;
+  width: 100% !important;
+  height: 260px !important;
   border-radius: var(--radius) var(--radius) 0 0;
   object-fit: cover;
+  display: block;
 }
 
 /* ===== TARJETA AVENA - imagen grande ===== */
