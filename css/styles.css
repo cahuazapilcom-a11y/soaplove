@@ -1179,3 +1179,53 @@ img { max-width: 100%; }
   border-radius: var(--radius) var(--radius) 0 0;
   object-fit: cover;
 }
+
+/* ===== SECCIÓN DESCUBRE ===== */
+.descubre-section {
+  padding: 80px 0;
+  background: var(--cream);
+}
+.descubre-sub {
+  color: var(--text-light);
+  margin-bottom: 48px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.descubre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+.descubre-categoria {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+.descubre-categoria h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--brown);
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--cream);
+  padding-bottom: 10px;
+}
+.descubre-categoria ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.descubre-categoria ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f5f0eb;
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+.descubre-categoria ul li:last-child {
+  border-bottom: none;
+}
+.descubre-categoria ul li strong {
+  color: var(--brown);
+}
