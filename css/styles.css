@@ -166,7 +166,7 @@ img { max-width: 100%; }
   gap: 8px;
 }
 
-.logo-icon { font-size: 1.4rem; }
+.logo-icon { height: 40px; width: 40px; object-fit: cover; border-radius: 50%; vertical-align: middle; }
 
 .nav-menu {
   display: flex;
