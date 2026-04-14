@@ -795,8 +795,10 @@ img { max-width: 100%; }
   transition: var(--transition);
 }
 .pago-item:hover { transform: translateY(-3px); }
-.pago-icon { font-size: 2rem; }
+.pago-logo { display: flex; align-items: center; justify-content: center; margin-bottom: 8px; }
+.pago-logo svg { border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
 .pago-item span { font-size: 0.85rem; font-weight: 700; color: var(--text); text-align: center; }
+.pago-numero { font-size: 0.8rem; color: var(--text-light); margin-top: 2px; letter-spacing: 0.5px; }
 
 /* ===== CONTACTO ===== */
 .contacto {
