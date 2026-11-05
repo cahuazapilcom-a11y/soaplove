@@ -150,21 +150,21 @@ img { max-width: 100%; }
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: var(--brown-dark);
-  color: var(--beige);
+  background: #D9F2A0;
+  color: var(--green-dark);
   font-size: 0.8rem;
   letter-spacing: 0.05em;
 }
 .pres-label { text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.12em; opacity: 0.8; }
-.pres-item { color: var(--white); font-weight: 700; transition: var(--transition); }
-.pres-item:hover { color: var(--beige); }
+.pres-item { color: var(--text); font-weight: 700; transition: var(--transition); }
+.pres-item:hover { color: var(--green-dark); }
 .pres-sep { opacity: 0.5; }
 .pres-destacado {
   padding: 2px 12px;
-  border: 1px solid var(--beige);
+  border: 1px solid var(--green-dark);
   border-radius: 50px;
 }
-.pres-destacado:hover { background: var(--beige); color: var(--brown-dark); }
+.pres-destacado:hover { background: var(--green-dark); color: var(--white); }
 
 .navbar.scrolled {
   box-shadow: var(--shadow);
