@@ -30,6 +30,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 104px;
   overflow-x: hidden;
 }
 
@@ -142,6 +143,29 @@ img { max-width: 100%; }
   transition: var(--transition);
 }
 
+/* Franja de presentaciones sobre el menú */
+.presentaciones-bar {
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--brown-dark);
+  color: var(--beige);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+.pres-label { text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.12em; opacity: 0.8; }
+.pres-item { color: var(--white); font-weight: 700; transition: var(--transition); }
+.pres-item:hover { color: var(--beige); }
+.pres-sep { opacity: 0.5; }
+.pres-destacado {
+  padding: 2px 12px;
+  border: 1px solid var(--beige);
+  border-radius: 50px;
+}
+.pres-destacado:hover { background: var(--beige); color: var(--brown-dark); }
+
 .navbar.scrolled {
   box-shadow: var(--shadow);
 }
@@ -226,7 +250,7 @@ img { max-width: 100%; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 24px 60px;
+  padding: 134px 24px 60px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -925,7 +949,7 @@ img { max-width: 100%; }
   .nav-menu {
     display: none;
     position: fixed;
-    top: 70px; left: 0; right: 0;
+    top: 104px; left: 0; right: 0;
     background: var(--cream);
     flex-direction: column;
     padding: 24px;
@@ -964,6 +988,7 @@ img { max-width: 100%; }
 
 @media (max-width: 480px) {
   .hero h1 { font-size: 2rem; }
+  .pres-label { display: none; }
   .proceso-grid { grid-template-columns: 1fr; }
   .envios-grid { grid-template-columns: 1fr; }
   .hero-stats { gap: 24px; }
