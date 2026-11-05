@@ -52,44 +52,43 @@ const preguntas = [
   {
     pregunta: '¿Cómo se siente tu piel a las pocas horas de lavarte la cara?',
     opciones: [
-      { texto: '😩 Tensa y áspera, necesita crema urgente', tipo: 'seca' },
-      { texto: '✨ Brilla bastante, sobre todo en frente y nariz', tipo: 'grasa' },
-      { texto: '⚖️ Normal, ni muy seca ni muy grasa', tipo: 'normal' },
-      { texto: '🔁 Grasa en algunas zonas y seca en otras', tipo: 'mixta' },
+      { texto: 'Tensa y áspera, necesita crema urgente', tipo: 'seca' },
+      { texto: 'Brilla bastante, sobre todo en frente y nariz', tipo: 'grasa' },
+      { texto: 'Normal, ni muy seca ni muy grasa', tipo: 'normal' },
+      { texto: 'Grasa en algunas zonas y seca en otras', tipo: 'mixta' },
     ]
   },
   {
     pregunta: '¿Tu piel reacciona fácilmente a nuevos productos?',
     opciones: [
-      { texto: '🚨 Sí, se irrita, enrojece o pica con frecuencia', tipo: 'sensible' },
-      { texto: '😊 No, tolera bien la mayoría de productos', tipo: 'normal' },
-      { texto: '🤔 A veces, depende del producto', tipo: 'mixta' },
-      { texto: '💧 Mi piel es seca y reacciona cuando está deshidratada', tipo: 'seca' },
+      { texto: 'Sí, se irrita, enrojece o pica con frecuencia', tipo: 'sensible' },
+      { texto: 'No, tolera bien la mayoría de productos', tipo: 'normal' },
+      { texto: 'A veces, depende del producto', tipo: 'mixta' },
+      { texto: 'Mi piel es seca y reacciona cuando está deshidratada', tipo: 'seca' },
     ]
   },
   {
     pregunta: '¿Cuál es tu mayor preocupación con tu piel?',
     opciones: [
-      { texto: '💧 Hidratación y sequedad', tipo: 'seca' },
-      { texto: '🌟 Brillo excesivo y poros dilatados', tipo: 'grasa' },
-      { texto: '🌸 Manchas, tono desigual', tipo: 'mixta' },
-      { texto: '🛡️ Irritaciones y sensibilidad', tipo: 'sensible' },
+      { texto: 'Hidratación y sequedad', tipo: 'seca' },
+      { texto: 'Brillo excesivo y poros dilatados', tipo: 'grasa' },
+      { texto: 'Manchas, tono desigual', tipo: 'mixta' },
+      { texto: 'Irritaciones y sensibilidad', tipo: 'sensible' },
     ]
   },
   {
     pregunta: '¿Para qué parte del cuerpo buscas el jabón?',
     opciones: [
-      { texto: '😊 Cara / rostro', tipo: 'facial' },
-      { texto: '🚿 Cuerpo en general', tipo: 'corporal' },
-      { texto: '🌸 Zona íntima', tipo: 'intimo' },
-      { texto: '👶 Para niños o piel de bebé', tipo: 'ninos' },
+      { texto: 'Cara / rostro', tipo: 'facial' },
+      { texto: 'Cuerpo en general', tipo: 'corporal' },
+      { texto: 'Zona íntima', tipo: 'intimo' },
+      { texto: 'Para niños o piel de bebé', tipo: 'ninos' },
     ]
   }
 ];
 
 const recomendaciones = {
   seca: {
-    emoji: '💧',
     titulo: '¡Tu piel necesita hidratación profunda!',
     descripcion: 'Tu piel seca se beneficiará muchísimo de jabones con aceites nutritivos y mantecas naturales.',
     producto: 'Jabón de Miel + Coco',
@@ -97,7 +96,6 @@ const recomendaciones = {
     precio: 'S/ 12 – S/ 18'
   },
   grasa: {
-    emoji: '✨',
     titulo: '¡Tu piel necesita equilibrio y limpieza profunda!',
     descripcion: 'Los jabones con arcilla y carbón activado absorben el exceso de grasa sin resecar la piel.',
     producto: 'Jabón de Carbón Activado o Arcilla',
@@ -105,7 +103,6 @@ const recomendaciones = {
     precio: 'S/ 18 – S/ 25'
   },
   mixta: {
-    emoji: '⚖️',
     titulo: '¡Tu piel necesita equilibrio!',
     descripcion: 'Las pieles mixtas responden bien a jabones suaves que limpian sin alterar el equilibrio natural.',
     producto: 'Jabón de Té Verde o Cúrcuma',
@@ -113,7 +110,6 @@ const recomendaciones = {
     precio: 'S/ 15 – S/ 25'
   },
   normal: {
-    emoji: '🌿',
     titulo: '¡Tienes una piel equilibrada, cuídala bien!',
     descripcion: 'Tu piel normal puede disfrutar de cualquier jabón artesanal. Te recomendamos variedad.',
     producto: 'Pack 3 Jabones a tu elección',
@@ -121,7 +117,6 @@ const recomendaciones = {
     precio: 'S/ 35 – S/ 50'
   },
   sensible: {
-    emoji: '🌸',
     titulo: '¡Tu piel necesita suavidad y cuidado!',
     descripcion: 'Las pieles sensibles necesitan jabones con ingredientes calmantes y sin perfumes artificiales.',
     producto: 'Jabón de Avena + Manzanilla',
@@ -129,7 +124,6 @@ const recomendaciones = {
     precio: 'S/ 14 – S/ 20'
   },
   facial: {
-    emoji: '😊',
     titulo: 'Para tu rutina facial',
     descripcion: 'Tenemos una línea completa de jabones faciales artesanales para cada tipo de piel.',
     producto: 'Jabón Facial (avena, carbón, té verde)',
@@ -137,7 +131,6 @@ const recomendaciones = {
     precio: 'S/ 14 – S/ 25'
   },
   corporal: {
-    emoji: '🚿',
     titulo: 'Para tu rutina corporal',
     descripcion: 'Nuestros jabones corporales artesanales te darán una piel suave y perfumada naturalmente.',
     producto: 'Jabones Corporales SoapLove',
@@ -145,7 +138,6 @@ const recomendaciones = {
     precio: 'S/ 12 – S/ 22'
   },
   intimo: {
-    emoji: '🌸',
     titulo: 'Cuidado íntimo natural',
     descripcion: 'Nuestro jabón íntimo tiene pH balanceado y está formulado con hierbas calmantes.',
     producto: 'Jabón Íntimo Suave',
@@ -153,7 +145,6 @@ const recomendaciones = {
     precio: 'S/ 16 – S/ 23'
   },
   ninos: {
-    emoji: '👶',
     titulo: 'Suavidad para los más pequeños',
     descripcion: 'Jabones extra suaves sin ingredientes irritantes, perfectos para la piel delicada de los niños.',
     producto: 'Jabón Infantil de Avena y Miel',
@@ -189,7 +180,7 @@ function renderPregunta() {
   `;
 
   btnPrev.style.display = preguntaActual === 0 ? 'none' : 'inline-block';
-  btnNext.textContent = preguntaActual === preguntas.length - 1 ? 'Ver mi recomendación ✨' : 'Siguiente →';
+  btnNext.textContent = preguntaActual === preguntas.length - 1 ? 'Ver mi recomendación' : 'Siguiente →';
 }
 
 function seleccionarOpcion(tipo, btn) {
@@ -245,17 +236,16 @@ function mostrarResultado() {
   quizBox.style.display = 'none';
 
   resultadoContent.innerHTML = `
-    <div class="resultado-emoji">${rec.emoji}</div>
     <h3>${rec.titulo}</h3>
     <p>${rec.descripcion}</p>
     <div class="resultado-producto">
-      <h4>🧼 Te recomendamos: ${rec.producto}</h4>
+      <h4>Te recomendamos: ${rec.producto}</h4>
       <p>${rec.detalle}</p>
       <p><strong>Precio: ${rec.precio}</strong></p>
     </div>
-    <a href="https://wa.me/51983106899?text=Hola!%20Hice%20el%20quiz%20de%20SoapLove%20y%20me%20recomendaron%3A%20${encodeURIComponent(rec.producto)}%20%F0%9F%A7%BC%20%C2%BFMe%20puedes%20dar%20m%C3%A1s%20info%3F"
+    <a href="https://wa.me/51983106899?text=Hola!%20Hice%20el%20quiz%20de%20SoapLove%20y%20me%20recomendaron%3A%20${encodeURIComponent(rec.producto)}%20%C2%BFMe%20puedes%20dar%20m%C3%A1s%20info%3F"
        target="_blank" class="btn btn-primary" style="margin-bottom: 16px; display: inline-block;">
-      Pedir por WhatsApp 💬
+      Pedir por WhatsApp
     </a>
     <br/>
   `;
@@ -285,7 +275,7 @@ function enviarConsulta(e) {
     return;
   }
 
-  const texto = `Hola SoapLove! 🧼\n\nNombre: ${nombre}\nCelular: ${celular}\nConsulta: ${mensaje}`;
+  const texto = `Hola SoapLove!\n\nNombre: ${nombre}\nCelular: ${celular}\nConsulta: ${mensaje}`;
   const url = `https://wa.me/51983106899?text=${encodeURIComponent(texto)}`;
   window.open(url, '_blank');
 }
