@@ -352,7 +352,6 @@ img { max-width: 100%; }
 .soap-card-big p { color: var(--text-light); font-size: 1rem; line-height: 1.6; }
 .soap-hero-img { width: 100%; border-radius: 16px; object-fit: cover; margin-bottom: 16px; }
 .soap-hero-video { width: 100%; border-radius: 16px; object-fit: cover; margin-bottom: 16px; max-height: 280px; }
-.sobre-mi-img { width: 100%; height: 100%; border-radius: 20px; object-fit: cover; display: block; }
 .producto-img { width: 80px; height: 80px; border-radius: 12px; object-fit: cover; }
 .miel-img, .coco-img, .avena-img, .cacao-img, .caja-img, .carbon-img, .caspa-img, .curcuma-img, .infantil-img, .intimo-img, .pack-img, .shampo-img, .teverde-img {
   width: 100% !important;
@@ -390,58 +389,38 @@ img { max-width: 100%; }
   font-size: 0.9rem;
 }
 
-/* ===== SOBRE MÍ ===== */
-.sobre-mi {
+/* ===== INSPÍRATE ===== */
+.inspirate {
   padding: 100px 24px;
 }
-.sobre-grid {
+.inspirate h2 { font-size: 2.2rem; margin-bottom: 12px; }
+.inspira-sub { color: var(--text-light); max-width: 560px; margin: 0 auto 50px; }
+.inspira-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+  margin-bottom: 48px;
 }
-.sobre-visual {
-  position: relative;
-}
-.sobre-img-placeholder {
-  background: var(--cream-dark);
-  border: 2px solid var(--beige);
+.inspira-card {
+  background: var(--white);
   border-radius: var(--radius);
-  height: 400px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: var(--transition);
+}
+.inspira-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+.inspira-foto {
+  aspect-ratio: 4 / 5;
+  background: var(--cream-dark);
+  border-bottom: 2px dashed var(--beige-dark);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  box-shadow: var(--shadow);
 }
-.sobre-img-placeholder span { font-size: 5rem; }
-.sobre-img-placeholder p { color: var(--text-light); text-align: center; font-size: 1.1rem; }
-.sobre-badge-float {
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
-  background: var(--green);
-  color: white;
-  padding: 12px 24px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 0.9rem;
-  box-shadow: var(--shadow);
-}
-.sobre-text h2 { font-size: 2.2rem; margin-bottom: 20px; }
-.sobre-text p { color: var(--text-light); margin-bottom: 16px; }
-.sobre-list {
-  list-style: none;
-  margin: 24px 0 32px;
-}
-.sobre-list li {
-  padding: 8px 0;
-  color: var(--text);
-  font-size: 0.95rem;
-  border-bottom: 1px solid var(--beige);
-}
-.sobre-list li:last-child { border: none; }
+.inspira-foto span { color: var(--text-light); font-size: 0.85rem; letter-spacing: 0.05em; }
+.inspira-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.inspira-card h3 { font-size: 1.15rem; color: var(--brown); margin: 22px 22px 10px; }
+.inspira-card p { color: var(--text-light); font-size: 0.92rem; margin: 0 22px 26px; }
 
 /* ===== PROCESO ===== */
 .proceso {
@@ -972,9 +951,6 @@ img { max-width: 100%; }
   .hero-stats { justify-content: center; }
   .hero-visual { width: 100%; }
 
-  .sobre-grid { grid-template-columns: 1fr; gap: 40px; }
-  .sobre-badge-float { right: 0; }
-
   .contacto-grid { grid-template-columns: 1fr; gap: 40px; }
 
   .testimonios-grid { grid-template-columns: 1fr; }
@@ -994,7 +970,6 @@ img { max-width: 100%; }
   .proceso-grid { grid-template-columns: 1fr; }
   .envios-grid { grid-template-columns: 1fr; }
   .hero-stats { gap: 24px; }
-  .sobre-img-placeholder { height: 280px; }
 }
 
 /* ===== TARJETA COCO - imagen grande y texto transparente ===== */

@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderPregunta();
 
   // Animar tarjetas al hacer scroll
-  const animables = document.querySelectorAll('.producto-card, .testimonio-card, .paso, .envio-card, .pago-item');
+  const animables = document.querySelectorAll('.producto-card, .testimonio-card, .paso, .envio-card, .pago-item, .inspira-card');
   animables.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
